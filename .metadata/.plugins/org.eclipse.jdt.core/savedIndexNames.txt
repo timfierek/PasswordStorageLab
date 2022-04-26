@@ -1,0 +1,20 @@
+INDEX VERSION 1.131+C:\Users\Tim\Desktop\AmazonJavaBootcamp\3.4-TDDwithUnitTesting\.metadata\.plugins\org.eclipse.jdt.core
+4126881825.index
+1074178816.index
+4238206857.index
+1158870954.index
+1032927296.index
+4181479479.index
+760091825.index
+3575976116.index
+2662530069.index
+4192282261.index
+3585029756.index
+1900594188.index
+1864593647.index
+3530692787.index
+1668130353.index
+3007244696.index
+913855641.index
+4182114923.index
+1865797976.index
