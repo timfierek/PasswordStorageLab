@@ -43,17 +43,13 @@ public class PasswordStorage {
 			passwords.add(password);
 			return true;
 		}	// If the day is tuesday, password must have the string "Taco" inside of it
-		else if(curDay.getValue() == 2) {
-			if(!password.contains("Taco")) {
-				return false;
-			}
-		}	// If the time is between 12 and 1am allow special passwords
-		else if(curHour == 0) {
-			if(password.equals("Red Rum") || password.equals("Spooky")) {
-				passwords.add(password);
-				return true;
-			}
-		}
+		/*
+		 * else if(curDay.getValue() == Calendar.TUESDAY) {
+		 * if(!password.contains("Taco")) { return false; } } // If the time is between
+		 * 12 and 1am allow special passwords else if(curHour == 0) {
+		 * if(password.equals("Red Rum") || password.equals("Spooky")) {
+		 * passwords.add(password); return true; } }
+		 */
 		
 		boolean correctLength = (password.length() > 7 && password.length() < 12);
 		boolean containsNum = hasNum(password);
