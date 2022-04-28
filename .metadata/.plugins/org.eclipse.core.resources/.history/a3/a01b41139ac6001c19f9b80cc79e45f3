@@ -105,8 +105,8 @@ class PasswordStorageTest {
 	
 	@Test 
 	void testContainsPassword5() {
-		storage.addPassword(" wIthASp4cE");
-		assertFalse(storage.hasPassword(" wIthASp4cE"));
+		storage.addPassword("nOspAc3s");
+		assertTrue(storage.hasPassword("nOspAc3s"));
 	}
 	
 	@Test

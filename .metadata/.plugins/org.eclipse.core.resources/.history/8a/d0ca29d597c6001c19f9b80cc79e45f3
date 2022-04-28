@@ -25,7 +25,6 @@ class PasswordStorageTest {
 	
 	@Test 
 	void testContainsPassword1() {
-		storage.addPassword("pAsswOrd5");
 		assertTrue(storage.hasPassword("pAsswOrd5"));
 	}
 	
@@ -50,12 +49,6 @@ class PasswordStorageTest {
 		assertTrue(storage.addPassword("gOOdl3ngth"));
 	}
 	
-	@Test 
-	void testContainsPassword2() {
-		storage.addPassword("gOOdl3ngth");		
-		assertTrue(storage.hasPassword("gOOdl3ngth"));
-	}
-	
 	@Test
 	void testPasswordNums1() {
 		assertFalse(storage.addPassword("nONUmbers"));
@@ -71,12 +64,6 @@ class PasswordStorageTest {
 		assertFalse(storage.addPassword("hAsNUmber6"));
 	}
 	
-	@Test 
-	void testContainsPassword3() {
-		storage.addPassword("hAsNUmber7");	
-		assertTrue(storage.hasPassword("hAsNUmber7"));
-	}
-	
 	@Test
 	void testPasswordVowels1() {
 		assertFalse(storage.addPassword("nocapsvow3l"));
@@ -85,12 +72,6 @@ class PasswordStorageTest {
 	@Test
 	void testPasswordVowels2() {
 		assertTrue(storage.addPassword("vOwElsC4ps"));
-	}
-	
-	@Test 
-	void testContainsPassword4() {
-		storage.addPassword("vOwElsC4ps");
-		assertTrue(storage.hasPassword("vOwElsC4ps"));
 	}
 	
 	@Test
@@ -103,12 +84,6 @@ class PasswordStorageTest {
 		assertTrue(storage.addPassword("nOspAc3s"));
 	}
 	
-	@Test 
-	void testContainsPassword5() {
-		storage.addPassword(" wIthASp4cE");
-		assertFalse(storage.hasPassword(" wIthASp4cE"));
-	}
-	
 	@Test
 	void testSpecialPasswords1() {
 		assertTrue(storage.addPassword("admin"));
@@ -117,12 +92,6 @@ class PasswordStorageTest {
 	@Test
 	void testSpecialPasswords2() {
 		assertFalse(storage.addPassword("admin"));
-	}
-	
-	@Test 
-	void testContainsPassword6() {
-		storage.addPassword("admin");
-		assertTrue(storage.hasPassword("admin"));
 	}
 	
 	@Test

@@ -24,17 +24,6 @@ public class PasswordStorage {
 	}
 	
 	/**
-	 * public method similar to contains() in order to allow for checking
-	 * if a string exists in the passwords without opening up the access of passwords
-	 * 
-	 * @param password password to be searched for
-	 * @return true or false depending on if the password is in the list
-	 */
-	public boolean hasPassword(String password) {
-		return passwords.contains(password);
-	}
-	
-	/**
 	 * adds passwords to passwords ArrayList depending on certain constraints
 	 * 
 	 * @param password String to be added as password
